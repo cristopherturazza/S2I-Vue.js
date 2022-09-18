@@ -57,6 +57,14 @@ const winner = computed(() =>  {
   return status;
 });
 
+// check if there is a draw
+
+const isDraw = computed(() => {
+  if (game.board.includes('')) return false;
+  else if (!game.board.includes('') && winner.value != null ) return false;
+  else return true;
+})
+
 // board reset
 
 const resetBoard = () => {
@@ -79,11 +87,14 @@ const resetBoard = () => {
       </div>
     </div>
     <div class="flex justify-center mt-12">
-      <div class="flex flex-row px-4 mr-12 items-center border border-emerald-300 shadow-lg rounded-xl">
-        <h3 class="text-xl mr-4 font-bold text-stone-600">Player: </h3>
-        <p class="font-chalk text-4xl mt-1">{{game.player}}</p>
+      <div v-if="!isDraw" class="flex flex-row px-4 mr-12 items-center border border-emerald-300 shadow-lg rounded-xl">
+          <h3 class="text-xl mr-4 font-bold text-stone-600">Player: </h3>
+          <p class="font-chalk text-4xl mt-1">{{game.player}}</p>
       </div>
-        <button class="bg-emerald-500 py-4 px-6 rounded-xl shadow-xl hover:bg-emerald-700 active:shadow-sm text-stone-100" @click="resetBoard">Reset Board</button>
+      <div v-else-if="isDraw" class="flex flex-row px-4 mr-12 items-center border border-red-300 shadow-lg rounded-xl">
+          <p class="font-chalk text-4xl mt-1">DRAW</p>
+      </div>
+        <button class="bg-emerald-500 py-4 px-6 rounded-xl shadow-xl hover:bg-emerald-700 active:shadow-sm text-stone-100" @click="resetBoard">{{ !isDraw ? "Reset Board" : "New Game" }}</button>
       </div>    
   </main>
 </template>
