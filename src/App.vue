@@ -118,7 +118,7 @@ const resetBoard = () => {
 
 <style scoped>
   .cell {
-  @apply w-20 h-20 sm:w-32 sm:h-32 font-chalk flex items-center justify-center transition-all font-bold text-8xl hover:bg-emerald-100 cursor-pointer;
+  @apply w-20 h-20 sm:w-32 sm:h-32 font-chalk flex items-center justify-center transition-all font-bold text-8xl sm:hover:bg-emerald-100 cursor-pointer;
   }
   .cell:nth-child(2), .cell:nth-child(8) {
     border-left: 1px solid;

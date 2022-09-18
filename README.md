@@ -40,6 +40,7 @@ Check out for index.html in the /build folder.
 ## :zap: Try it!
 
 Elsewhere, you can simply try it here:
+[Tic Tac Toe](https://christactoe.netlify.app/)
 
 
 ## :page_with_curl: License
