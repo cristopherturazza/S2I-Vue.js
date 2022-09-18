@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+# Tic-Tac-Toe :o: :x:
 
 A simple personal version of the popular Tic-Tac-Toe game, made with Vue.js.
 
