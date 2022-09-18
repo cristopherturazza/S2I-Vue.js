@@ -1,35 +1,52 @@
-# tic-tac-toe
+# Tic-Tac-Toe
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple personal version of the popular Tic-Tac-Toe game, made with Vue.js.
 
-## Recommended IDE Setup
+## :computer: Languages
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- HTML5
+- CSS3
+- Javascript ES6
 
-## Customize configuration
+## :bulb:Tools 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Vue.js 3 - Composition API
+- Tailwind CSS
+- Oh Vue Icons
 
-## Project Setup
+## :floppy_disk: Installation
 
-```sh
-npm install
-```
+First of all, you need Node.js installed.
+If you don't have it, you can download it here:
+[Node.js](https://nodejs.org/it/download/)
+After the installation, you're ready to go.
 
-### Compile and Hot-Reload for Development
+### 1 - Clone the repository
 
-```sh
-npm run dev
-```
+`git clone https://github.com/cristopherturazza/S2I-Vue.js`
 
-### Compile and Minify for Production
+### 2 - Install the dependencies
 
-```sh
-npm run build
-```
+`npm install`
 
-### Lint with [ESLint](https://eslint.org/)
+### 3 - Build it!
 
-```sh
-npm run lint
-```
+`npm run build`
+
+### 4 - Open in the browser
+
+Check out for index.html in the /build folder.
+
+## :zap: Try it!
+
+Elsewhere, you can simply try it here:
+
+
+## :page_with_curl: License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## :e-mail: Contact Me
+
+Any questions? Send me an e-mail here: cristopherturazza@gmail.com <br>
+You can find my Linkedin profile here: https://www.linkedin.com/in/cristopher-turazza-0863a026/
